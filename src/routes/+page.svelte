@@ -10,6 +10,7 @@
             })
             .then((device: any) => {
                 console.log({ device });
+                device.gatt.connect();
             })
             .catch((error: any) => {
                 console.error(error);
